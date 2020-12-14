@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './App.css';
-import List from './components/List'
+import Container from './Container';
 
-function App() {
-  return (
-    <div className="App">
-      <List />
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Container />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
