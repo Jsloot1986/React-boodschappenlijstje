@@ -1,0 +1,61 @@
+*{
+  background-color: skyblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+.lists{
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 500px;
+  grid-template-areas: 
+  'gl sl';
+}
+.mainTitle{
+  grid-area: h;
+  margin: 5px;
+  text-align: center;
+}
+
+.grocery-list{
+  grid-area: gl;
+  margin: 5px;
+  text-align:center;
+}
+
+.shopping-list{
+  grid-area: sl;
+  margin: 5px;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.list-item{
+  border: solid 1px white;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.shopping-list-item{
+  border: solid 1px white;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.list-item:nth-child(odd){
+  background-color: red
+}
+.list-item:nth-child(even){
+  background-color: pink
+}
+
+.shopping-list-item:nth-child(odd){
+  background-color: blue;
+}
+
+.shopping-list-item:nth-child(even){
+  background-color: lightblue;
+}
